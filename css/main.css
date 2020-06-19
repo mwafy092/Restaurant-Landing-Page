@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(71, 68, 68);
+    background-image: url(../images/background-adare-restaurant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+#logo {
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+
+header {
+    text-align: center;
+}
+
+.heading {
+    font-size: 5rem;
+    color: white;
+}
+
+.intro {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+nav {
+    background-color:rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 4rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 1rem;
+}
+
+nav ul li {
+    text-align: center;
+}
+nav ul a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+main {
+    text-align: center;
+    padding: 5rem 12rem 2rem;
+}
+
+.link-btn {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    padding: 0.7rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+.link-btn:hover {
+    background-color:black;
+}
+
+.link-btn:focus {
+    outline: none;
+}
+
+.map {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.map iframe {
+    border-radius: 1rem;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem 1rem;
+    margin-top: 4rem;
+    border-radius: 1rem;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.animate {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+        transform: translateX(8rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.logo-animate {
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+        transform: translatex(-4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
